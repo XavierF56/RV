@@ -10,14 +10,20 @@ public class InitialVelocity : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float x = rigidbody.velocity.x;
+		float y = rigidbody.velocity.y;
+		float z = rigidbody.velocity.z;
+
 		if (Input.GetKeyDown(KeyCode.UpArrow)) {
-			rigidbody.velocity = new Vector3(0,0,-10);
+			rigidbody.velocity = new Vector3(x,y,Math.Max(z-20,50));
 		} else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-			rigidbody.velocity = new Vector3(10,0,0);
+			rigidbody.velocity = new Vector3(x+20,y,z);
 		} else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-			rigidbody.velocity = new Vector3(-10,0,0);
+			rigidbody.velocity = new Vector3(x-20,y,z);
 		} else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-			rigidbody.velocity = new Vector3(0,0,10);
+			rigidbody.velocity = new Vector3(x,y,z+20);
+		} else if (Input.GetKeyDown(KeyCode.Space)) {
+			rigidbody.velocity = new Vector3(x,y+10,z);
 		}
 	}
 }

@@ -15,13 +15,13 @@ public class InitialVelocity : MonoBehaviour {
 		float z = rigidbody.velocity.z;
 
 		if (Input.GetKeyDown(KeyCode.UpArrow)) {
-			rigidbody.velocity = new Vector3(x,y,Math.Max(z-20,50));
+			rigidbody.velocity = new Vector3(x,y,z-10);
 		} else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-			rigidbody.velocity = new Vector3(x+20,y,z);
+			rigidbody.velocity = new Vector3(x+10,y,z);
 		} else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-			rigidbody.velocity = new Vector3(x-20,y,z);
+			rigidbody.velocity = new Vector3(x-10,y,z);
 		} else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-			rigidbody.velocity = new Vector3(x,y,z+20);
+			rigidbody.velocity = new Vector3(x,y,z+10);
 		} else if (Input.GetKeyDown(KeyCode.Space)) {
 			rigidbody.velocity = new Vector3(x,y+10,z);
 		}
