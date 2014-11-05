@@ -5,12 +5,12 @@ public class InitialVelocity : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rigidbody.velocity = new Vector3 (0, 0, -10);
+		//rigidbody.velocity = new Vector3 (0, 0, -10);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float x = rigidbody.velocity.x;
+		/*float x = rigidbody.velocity.x;
 		float y = rigidbody.velocity.y;
 		float z = rigidbody.velocity.z;
 
@@ -24,6 +24,6 @@ public class InitialVelocity : MonoBehaviour {
 			rigidbody.velocity = new Vector3(x,y,z+10);
 		} else if (Input.GetKeyDown(KeyCode.Space)) {
 			rigidbody.velocity = new Vector3(x,y+10,z);
-		}
+		}*/
 	}
 }
