@@ -27,5 +27,9 @@ public class Lanceur : MonoBehaviour {
 			Object.Instantiate (rigidbody);
 			activeBall = false;
 		}
+
+		if (!activeBall && ++count > 500) {
+			Object.Destroy (gameObject);
+		}
 	}
 }
