@@ -23,9 +23,13 @@ public class Lanceur : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (activeBall && ++count > 100) {
+		if (activeBall && ++count > 400) {
 			Object.Instantiate (rigidbody);
 			activeBall = false;
+		}
+
+		if (!activeBall && ++count > 2000) {
+			Object.Destroy (gameObject);
 		}
 	}
 }

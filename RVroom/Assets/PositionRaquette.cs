@@ -4,15 +4,12 @@ using System.Collections;
 public class PositionRaquette : MonoBehaviour {
 
 	GameObject targetObject1, targetObject2, targetObject3;
-	float i;
 
 	// Use this for initialization
 	void Start () {
 		targetObject1 = GameObject.Find ("HandNode");
 		targetObject2 = GameObject.Find ("WristNode");
 		targetObject3 = GameObject.Find ("ElbowNode");
-
-		i = 0f;
 	}
 	
 	// Update is called once per frame

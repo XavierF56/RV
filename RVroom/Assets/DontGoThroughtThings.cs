@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using UnityEngine;
-using System.Collections;
-
 public class DontGoThroughThings : MonoBehaviour 
 {
 	public LayerMask layerMask; //make sure we aren't in this layer 
