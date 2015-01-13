@@ -22,4 +22,5 @@ public class PositionRaquette : MonoBehaviour {
 		transform.TransformDirection(new Vector3(90f, 0f, 0f));
 		print (transform.forward);
 	}
+
 }

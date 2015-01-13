@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Lanceur.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PositionRaquette.cs">
     <Files>
-      <File FileName="Assets\Lanceur.cs" Line="18" Column="11" />
-      <File FileName="Assets\RacketCollision.cs" Line="23" Column="1" />
-      <File FileName="h:\RV\RVroom\Assets\DontGoThroughtThings.cs" Line="45" Column="1" />
-      <File FileName="h:\RV\RVroom\Assets\PositionRaquette.cs" Line="26" Column="1" />
+      <File FileName="Assets\Lanceur.cs" Line="21" Column="18" />
+      <File FileName="Assets\RacketCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mouvement.cs" Line="1" Column="1" />
+      <File FileName="Assets\PositionRaquette.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

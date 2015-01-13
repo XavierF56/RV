@@ -4,9 +4,10 @@ using System.Collections;
 public class Lanceur : MonoBehaviour {
 
 	static Vector3 position = new Vector3();
-	
-	int count = 0;
+
 	bool activeBall = true;
+
+	float creationTime;
 
 	// Use this for initialization
 	void Start () {
@@ -19,16 +20,18 @@ public class Lanceur : MonoBehaviour {
 		float randY = 10f;//Random.Range (10, 20);
 		float randZ = 20f;//Random.Range (0, 30);
 		rigidbody.velocity = new Vector3 (randX, randY, randZ);
+
+		creationTime = Time.time;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (activeBall && ++count > 400) {
+		if (activeBall && Time.time > creationTime + 2) {
 			Object.Instantiate (rigidbody);
 			activeBall = false;
-		}
+		} 
 
-		if (!activeBall && ++count > 2000) {
+		if (!activeBall && Time.time > creationTime + 10) {
 			Object.Destroy (gameObject);
 		}
 	}
